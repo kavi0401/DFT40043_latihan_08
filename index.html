@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form enctype="multipart/form-data" action="simpan.php" method="post">
+        <table>
+            <tr>
+                <td>Gambar</td>
+                <td>
+                    <input type="file" name="gambar">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kereta</td>
+                <td>
+                    <select name="kereta" required>
+                        <optgroup label="Toyota">
+                            <option>VIOS</option>
+                            <option>ALTIS</option>
+                            <option>CAMRY</option>
+                        </optgroup>
+                        <optgroup label="Perodua">
+                            <option>KANCIL</option>
+                            <option>VIVA</option>
+                            <option>ARUZ</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        <button type="submit">SIMPAN</button>
+        <button type="batal">BATAL</button>
+    </form>
+</body>
+
+</html>
